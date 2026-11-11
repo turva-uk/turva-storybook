@@ -1,0 +1,11 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./Box-BssAA6js.js";import{t as r}from"./jsx-runtime-MKhVqBIO.js";import{n as i,t as a}from"./Container-DJA6w9O_.js";import{n as o,t as s}from"./Stack-D_d3SZwt.js";import{n as c,t as l}from"./PublicTitle-CeV5gCu6.js";var u,d,f,p,m;function h(){return(h=e((()=>{u=`_root_o4gad_1`,d=`_glow_o4gad_7`,f=`_grid_o4gad_25`,p=`_content_o4gad_36`,m={root:u,glow:d,grid:f,content:p}})))()}function g({children:e}){return(0,_.jsxs)(n,{"data-testid":`hero-background`,pb:`3rem`,className:m.root,children:[(0,_.jsx)(n,{"data-testid":`hero-glow`,className:m.glow}),(0,_.jsx)(n,{"data-testid":`hero-grid`,className:m.grid}),(0,_.jsx)(n,{"data-testid":`hero-content`,className:m.content,children:e})]})}var _;function v(){return(v=e((()=>{t(),h(),_=r(),g.__docgenInfo={description:``,methods:[],displayName:`PublicHeroBackground`,props:{children:{required:!1,tsType:{name:`ReactNode`},description:``}}}})))()}var y,b,x,S;function C(){return(C=e((()=>{i(),o(),v(),c(),y=r(),b={title:`Public/Background/Public hero background`,component:g,parameters:{layout:`fullscreen`}},x={render:()=>(0,y.jsx)(g,{children:(0,y.jsx)(a,{size:`lg`,py:`xl`,children:(0,y.jsx)(s,{align:`center`,justify:`center`,style:{minHeight:`100vh`},children:(0,y.jsx)(l,{title:`Communication that *counts*!`,description:`A modern, secure platform for patients and clinics to communicate seamlessly.`,c:`white`})})})})},S=[`WithContent`],x.parameters={...x.parameters,docs:{...x.parameters?.docs,source:{originalSource:`{
+  render: () => <PublicHeroBackground>
+      <Container size="lg" py="xl">
+        <Stack align="center" justify="center" style={{
+        minHeight: "100vh"
+      }}>
+          <PublicTitle title="Communication that *counts*!" description="A modern, secure platform for patients and clinics to communicate seamlessly." c="white" />
+        </Stack>
+      </Container>
+    </PublicHeroBackground>
+}`,...x.parameters?.docs?.source}}}})))()}C();export{x as WithContent,S as __namedExportsOrder,b as default};

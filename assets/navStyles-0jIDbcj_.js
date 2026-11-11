@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{o as t,u as n}from"./theme-B7Ll1jCm.js";var r,i,a;function o(){return(o=e((()=>{t(),r=`var(--mantine-font-size-md)`,i=`var(--mantine-color-gray-6)`,a={root:{fontSize:r},label:{fontSize:r,fontWeight:n.fontWeights.body,whiteSpace:`normal`,wordBreak:`break-word`,lineHeight:1.3}}})))()}export{o as n,a as r,i as t};

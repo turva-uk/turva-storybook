@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{n,t as r}from"./Group-DSt3d3i4.js";import{i,n as a,r as o,t as s}from"./FeedbackStatusBadge-kBUpJNBp.js";var c,l,u,d;function f(){return(f=e((()=>{n(),i(),a(),c=t(),l={title:`Badge/Feedback status badge`,component:s,parameters:{layout:`padded`},argTypes:{status:{control:`select`,options:[...o],description:`Feedback status`}}},u={render:()=>(0,c.jsx)(r,{gap:`md`,children:o.map(e=>(0,c.jsx)(s,{status:e},e))})},d=[`Default`],u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`{
+  render: () => <Group gap="md">
+      {FEEDBACK_STATUSES.map(status => <FeedbackStatusBadge key={status} status={status} />)}
+    </Group>
+}`,...u.parameters?.docs?.source},description:{story:`Shows all statuses.`,...u.parameters?.docs?.description}}}})))()}f();export{u as Default,d as __namedExportsOrder,l as default};

@@ -1,0 +1,8 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{C as t,S as n}from"./Form-BQWpUpVW.js";import{t as r}from"./jsx-runtime-MKhVqBIO.js";import{n as i,t as a}from"./Container-DJA6w9O_.js";import{n as o,t as s}from"./Stack-D_d3SZwt.js";import{T as c,n as l}from"./appIcons-BpiHpu4d.js";import{n as u,t as d}from"./StateMessage-BtkL8y7a.js";function f({feature:e}){return(0,p.jsx)(a,{size:`lg`,pt:`md`,pb:`xl`,children:(0,p.jsxs)(s,{gap:`lg`,children:[(0,p.jsx)(n,{title:`Welcome to Quill`}),(0,p.jsx)(d,{icon:(0,p.jsx)(c,{}),title:`No access`,description:(0,p.jsxs)(p.Fragment,{children:[e?(0,p.jsxs)(p.Fragment,{children:[`Your account does not have access to the`,` `,(0,p.jsx)(`span`,{style:{fontWeight:900},children:e}),` feature. If you need access to this feature, please email`,` `]}):(0,p.jsxs)(p.Fragment,{children:[`Your account does not have access to any of Quill Medical's features. Please email`,` `]}),(0,p.jsx)(`a`,{href:`mailto:info@quill-medical.com`,style:{color:`white`},children:`info@quill-medical.com`}),` `,`for assistance.`]})})]})})}var p;function m(){return(m=e((()=>{i(),o(),t(),u(),l(),p=r(),f.__docgenInfo={description:`No Access Layout
+
+Renders a centered message explaining the user doesn't have access
+yet, with instructions to contact their organisation administrator.
+
+@returns No access information page layout`,methods:[],displayName:`NoAccessLayout`,props:{feature:{required:!1,tsType:{name:`string`},description:`Name of the feature the user lacks access to. Left out when they
+reach no feature at all, which words the message about Quill as a
+whole rather than about one part of it.`}}}})))()}export{m as n,f as t};

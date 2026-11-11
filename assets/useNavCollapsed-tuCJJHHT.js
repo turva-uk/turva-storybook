@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{T as t,w as n}from"./Box-BssAA6js.js";import{n as r,t as i}from"./use-media-query-DGueX9ZJ.js";function a(){let e=t();return r(`(max-width: ${e.breakpoints.md})`)??!1}function o(){return(o=e((()=>{n(),i()})))()}export{a as n,o as t};

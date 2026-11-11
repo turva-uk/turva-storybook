@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";function n(e){let t=e.replace(/\D/g,``);return t.length===10?`${t.slice(0,3)} ${t.slice(3,6)} ${t.slice(6,10)}`:e}function r({nationalNumber:e,nationalNumberSystem:t}){if(t?.includes(`nhs.uk`)){let t=n(e);return(0,i.jsxs)(i.Fragment,{children:[`NHS `,t]})}return(0,i.jsx)(i.Fragment,{children:e})}var i;function a(){return(a=e((()=>{i=t(),r.__docgenInfo={description:`NationalNumber Component
+
+Displays a national health identifier.
+For NHS numbers: shows "NHS 123 456 7890" format.
+For other systems: shows the number as-is without any prefix or formatting.`,methods:[],displayName:`NationalNumber`,props:{nationalNumber:{required:!0,tsType:{name:`string`},description:`National identifier value`},nationalNumberSystem:{required:!1,tsType:{name:`string`},description:`FHIR system URL to determine formatting and label`}}}})))()}export{a as n,r as t};

@@ -1,0 +1,7 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./Box-BssAA6js.js";import{t as r}from"./jsx-runtime-MKhVqBIO.js";import{n as i,t as a}from"./Text-DPHIKpQi.js";import{n as o,t as s}from"./BaseCard-C_VuKVYL.js";import{n as c,t as l}from"./Skeleton-MhOxmKho.js";import{n as u,t as d}from"./Stack-D_d3SZwt.js";import{n as f,t as p}from"./BodyText-Vl4rxmG1.js";function m({title:e,value:t,suffix:r,loading:i=!1}){return(0,h.jsx)(s,{children:(0,h.jsxs)(d,{gap:`xs`,children:[(0,h.jsx)(p,{children:e}),(0,h.jsx)(n,{style:{height:38},children:i?(0,h.jsx)(l,{height:38,width:60}):(0,h.jsxs)(a,{size:`lg`,fw:700,lh:1,children:[t,r]})})]})})}var h;function g(){return(g=e((()=>{c(),u(),i(),t(),f(),o(),h=r(),m.__docgenInfo={description:`StatCard Component
+
+@example
+\`\`\`tsx
+<StatCard title="Total Users" value={42} />
+<StatCard title="Total Patients" value={128} loading />
+\`\`\``,methods:[],displayName:`StatCard`,props:{title:{required:!0,tsType:{name:`string`},description:`Title/label for the statistic`},value:{required:!0,tsType:{name:`number`},description:`Numeric value to display`},suffix:{required:!1,tsType:{name:`string`},description:`Optional suffix shown after the value (e.g. "%")`},loading:{required:!1,tsType:{name:`boolean`},description:`Loading state - shows skeleton when true`,defaultValue:{value:`false`,computed:!1}}}}})))()}export{g as n,m as t};

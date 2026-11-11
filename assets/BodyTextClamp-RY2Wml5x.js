@@ -1,0 +1,4 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{o as t,u as n}from"./theme-B7Ll1jCm.js";import{t as r}from"./jsx-runtime-MKhVqBIO.js";import{n as i,t as a}from"./Text-DPHIKpQi.js";function o({children:e,lineClamp:t}){return(0,s.jsx)(a,{size:`md`,fw:n.fontWeights.body,lineClamp:t,children:e})}var s;function c(){return(c=e((()=>{i(),t(),s=r(),o.__docgenInfo={description:`Renders body text truncated to the specified number of lines.
+
+@param props - Component props
+@returns Clamped text element`,methods:[],displayName:`BodyTextClamp`,props:{children:{required:!0,tsType:{name:`ReactNode`},description:`Content to render`},lineClamp:{required:!0,tsType:{name:`number`},description:`Maximum number of visible lines before truncation with ellipsis`}}}})))()}export{c as n,o as t};

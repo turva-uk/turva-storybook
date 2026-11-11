@@ -1,0 +1,10 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{n,t as r}from"./ThemeIcon-CMkkVvBI.js";import{Ft as i,Lt as a,V as o,an as s,at as c,hn as l,lt as u,n as d,pt as f,rn as p,tn as m}from"./appIcons-BpiHpu4d.js";import{n as h,t as g}from"./publicIconStroke-Dytt-0k3.js";function _({name:e,size:t=`lg`}){let n=y[e],i=b[t];return(0,v.jsx)(r,{variant:`transparent`,radius:`xl`,size:t,children:(0,v.jsx)(n,{size:i,color:`var(--mantine-color-secondary-4)`,stroke:g})})}var v,y,b;function x(){return(x=e((()=>{n(),d(),h(),v=t(),y={home:f,teaching:p,learning:o,assessments:s,educators:m,book:l,pricing:a,database:i,login:u,mail:c},b={xs:10,sm:13,md:16,lg:22,xl:29},_.__docgenInfo={description:``,methods:[],displayName:`PublicNavIcon`,props:{name:{required:!0,tsType:{name:`union`,raw:`| "home"
+| "teaching"
+| "learning"
+| "assessments"
+| "educators"
+| "book"
+| "pricing"
+| "database"
+| "login"
+| "mail"`,elements:[{name:`literal`,value:`"home"`},{name:`literal`,value:`"teaching"`},{name:`literal`,value:`"learning"`},{name:`literal`,value:`"assessments"`},{name:`literal`,value:`"educators"`},{name:`literal`,value:`"book"`},{name:`literal`,value:`"pricing"`},{name:`literal`,value:`"database"`},{name:`literal`,value:`"login"`},{name:`literal`,value:`"mail"`}]},description:`Icon type to display`},size:{required:!1,tsType:{name:`union`,raw:`"xs" | "sm" | "md" | "lg" | "xl"`,elements:[{name:`literal`,value:`"xs"`},{name:`literal`,value:`"sm"`},{name:`literal`,value:`"md"`},{name:`literal`,value:`"lg"`},{name:`literal`,value:`"xl"`}]},description:`Icon size preset (default: "lg")`,defaultValue:{value:`"lg"`,computed:!1}}}}})))()}export{x as n,_ as t};

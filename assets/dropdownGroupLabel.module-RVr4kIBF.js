@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";var t,n;function r(){return(r=e((()=>{t=`_groupLabel_vdnrx_14`,n={groupLabel:t}})))()}export{r as n,n as t};

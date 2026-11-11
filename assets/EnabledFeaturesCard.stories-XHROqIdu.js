@@ -1,0 +1,17 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{x as t}from"./Form-BQWpUpVW.js";import{t as n}from"./jsx-runtime-MKhVqBIO.js";import{n as r,t as i}from"./Group-DSt3d3i4.js";import{n as a,t as o}from"./BaseCard-C_VuKVYL.js";import{n as s,t as c}from"./Stack-D_d3SZwt.js";import{Y as l,n as u}from"./appIcons-BpiHpu4d.js";import{t as d}from"./Heading-CiSQlEyi.js";import{t as f}from"./EmptyState-ZBWAN5NX.js";import{n as p,t as m}from"./FeatureBadge-ChFD87Bk.js";import{n as h,t as g}from"./IconButton-B0JQpNZj.js";var _;function v(){return(v=e((()=>{_={teaching:`Teaching`,messaging:`Messaging`,letters:`Letters`,passport:`Clinician passport`,passport_write:`Passport writing covered`}})))()}function y({features:e,onEdit:t}){return(0,b.jsx)(o,{children:(0,b.jsxs)(c,{gap:`md`,children:[(0,b.jsxs)(i,{justify:`space-between`,align:`center`,children:[(0,b.jsx)(d,{children:`Enabled features`}),(0,b.jsx)(g,{icon:(0,b.jsx)(l,{}),onClick:t,"aria-label":`Edit features`})]}),e.length>0?(0,b.jsx)(i,{gap:`sm`,children:e.map(e=>(0,b.jsx)(m,{label:_[e]??e},e))}):(0,b.jsx)(f,{children:`No features enabled`})]})})}var b;function x(){return(x=e((()=>{r(),s(),a(),p(),h(),u(),t(),v(),b=n(),y.__docgenInfo={description:``,methods:[],displayName:`EnabledFeaturesCard`,props:{features:{required:!0,tsType:{name:`Array`,elements:[{name:`string`}],raw:`string[]`},description:`The feature keys switched on here. An unknown key shows as itself.`},onEdit:{required:!0,tsType:{name:`signature`,type:`function`,raw:`() => void`,signature:{arguments:[],return:{name:`void`}}},description:`Opens the page where the features are changed.`}}}})))()}var S,C,w,T,E,D;function O(){return(O=e((()=>{x(),S={title:`Admin/Enabled features card`,component:y,parameters:{layout:`padded`},args:{onEdit:void 0}},C={args:{features:[`passport`]}},w={args:{features:[`passport`,`passport_write`]}},T={args:{features:[`teaching`,`messaging`,`letters`,`passport`]}},E={args:{features:[]}},D=[`PassportOnly`,`PassportWithCover`,`SeveralFeatures`,`NoFeatures`],C.parameters={...C.parameters,docs:{...C.parameters?.docs,source:{originalSource:`{
+  args: {
+    features: ["passport"]
+  }
+}`,...C.parameters?.docs?.source},description:{story:`A site with the passport on`,...C.parameters?.docs?.description}}},w.parameters={...w.parameters,docs:{...w.parameters?.docs,source:{originalSource:`{
+  args: {
+    features: ["passport", "passport_write"]
+  }
+}`,...w.parameters?.docs?.source},description:{story:`A site paying for its members' writing, as Cheltenham oncology does`,...w.parameters?.docs?.description}}},T.parameters={...T.parameters,docs:{...T.parameters?.docs,source:{originalSource:`{
+  args: {
+    features: ["teaching", "messaging", "letters", "passport"]
+  }
+}`,...T.parameters?.docs?.source},description:{story:`An organisation with several features`,...T.parameters?.docs?.description}}},E.parameters={...E.parameters,docs:{...E.parameters?.docs,source:{originalSource:`{
+  args: {
+    features: []
+  }
+}`,...E.parameters?.docs?.source},description:{story:`Nothing switched on yet`,...E.parameters?.docs?.description}}}})))()}O();export{E as NoFeatures,C as PassportOnly,w as PassportWithCover,T as SeveralFeatures,D as __namedExportsOrder,S as default};

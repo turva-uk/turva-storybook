@@ -1,0 +1,6 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{S as t,x as n}from"./Form-BQWpUpVW.js";import{t as r}from"./jsx-runtime-MKhVqBIO.js";import{n as i,t as a}from"./Center-GYchu4ul.js";import{n as o,t as s}from"./Container-DJA6w9O_.js";import{n as c,t as l}from"./Stack-D_d3SZwt.js";import{t as u}from"./BodyText-Vl4rxmG1.js";import{n as d,t as f}from"./IconTextButton-Dujo5R-j.js";import{t as p}from"./page-header-DDmZahL6.js";function m(){let e=`./`.endsWith(`/`)?`./`:`.//`;return(0,h.jsx)(s,{size:`lg`,pt:`md`,pb:`xl`,children:(0,h.jsx)(a,{mih:`60vh`,children:(0,h.jsxs)(l,{align:`center`,gap:`lg`,children:[(0,h.jsx)(t,{title:`404 - Page not found`}),(0,h.jsx)(u,{c:`dimmed`,children:`The page you requested does not exist.`}),(0,h.jsx)(f,{icon:`arrowLeft`,label:`Go to home`,onClick:()=>{window.location.href=e}})]})})})}var h;function g(){return(g=e((()=>{i(),o(),c(),p(),n(),d(),h=r(),m.__docgenInfo={description:`Not Found Layout
+
+Renders 404 error page with message and home button. Normalizes base
+URL from Vite environment to ensure correct navigation back to SPA root.
+
+@returns 404 error page layout`,methods:[],displayName:`NotFoundLayout`}})))()}export{g as n,m as t};

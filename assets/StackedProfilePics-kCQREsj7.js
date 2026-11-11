@@ -1,0 +1,10 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{n,t as r}from"./ProfilePic-DcD8jf1h.js";import{n as i,t as a}from"./Skeleton-MhOxmKho.js";var o,s,c;function l(){return(l=e((()=>{o=`_stack_iwvw4_1`,s=`_avatar_iwvw4_6`,c={stack:o,avatar:s}})))()}function u({participants:e,size:t=`md`,isLoading:n=!1}){if(e.length===0&&!n)return null;if(n){let e=f[t];return(0,d.jsx)(a,{circle:!0,height:e,width:e})}return(0,d.jsx)(`div`,{className:c.stack,role:`group`,"aria-label":`Participants`,children:e.map((e,n)=>(0,d.jsx)(`div`,{className:c.avatar,children:(0,d.jsx)(r,{givenName:e.givenName,familyName:e.familyName,gradientIndex:e.gradientIndex,src:e.src,size:t})},`${e.givenName}-${e.familyName??``}-${n}`))})}var d,f;function p(){return(p=e((()=>{n(),i(),l(),d=t(),f={sm:32,md:48,lg:64},u.__docgenInfo={description:``,methods:[],displayName:`StackedProfilePics`,props:{participants:{required:!0,tsType:{name:`Array`,elements:[{name:`signature`,type:`object`,raw:`{
+  /** Given (first) name */
+  givenName: string;
+  /** Family (last) name */
+  familyName?: string;
+  /** Gradient colour index (0-29) */
+  gradientIndex?: number;
+  /** Optional image URL */
+  src?: string;
+}`,signature:{properties:[{key:`givenName`,value:{name:`string`,required:!0},description:`Given (first) name`},{key:`familyName`,value:{name:`string`,required:!1},description:`Family (last) name`},{key:`gradientIndex`,value:{name:`number`,required:!1},description:`Gradient colour index (0-29)`},{key:`src`,value:{name:`string`,required:!1},description:`Optional image URL`}]}}],raw:`StackedParticipant[]`},description:`Participant list to render`},size:{required:!1,tsType:{name:`union`,raw:`"sm" | "md" | "lg"`,elements:[{name:`literal`,value:`"sm"`},{name:`literal`,value:`"md"`},{name:`literal`,value:`"lg"`}]},description:`Avatar size passed through to ProfilePic`,defaultValue:{value:`"md"`,computed:!1}},isLoading:{required:!1,tsType:{name:`boolean`},description:`Show loading skeletons instead of avatars`,defaultValue:{value:`false`,computed:!1}}}}})))()}export{p as n,u as t};

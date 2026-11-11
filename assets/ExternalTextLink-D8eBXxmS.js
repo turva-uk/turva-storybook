@@ -1,0 +1,6 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{n,t as r}from"./VisuallyHidden-h9e_AaUt.js";import{n as i,t as a}from"./Anchor-wlk_Knrv.js";import{n as o,t as s}from"./TextLink.module-4UWbxKjw.js";function c({href:e,children:t}){return(0,l.jsxs)(a,{href:e,target:`_blank`,rel:`noopener noreferrer`,size:`md`,underline:`always`,className:s.link,children:[t,(0,l.jsx)(r,{children:` (opens in a new tab)`})]})}var l;function u(){return(u=e((()=>{i(),n(),o(),l=t(),c.__docgenInfo={description:`Renders an external link in the \`--link-color\` token. A screen reader
+is told that it opens in a new tab, which a sighted reader is not: the
+link sits inside a sentence, and the words would break it up.
+
+@param props - Component props
+@returns Styled anchor element opening in a new tab`,methods:[],displayName:`ExternalTextLink`,props:{href:{required:!0,tsType:{name:`string`},description:`Absolute address of the page to open`},children:{required:!0,tsType:{name:`ReactNode`},description:`Link content`}}}})))()}export{u as n,c as t};

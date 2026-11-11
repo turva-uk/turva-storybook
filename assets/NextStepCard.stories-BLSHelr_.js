@@ -1,0 +1,16 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{x as t}from"./Form-BQWpUpVW.js";import{t as n}from"./jsx-runtime-MKhVqBIO.js";import{n as r,t as i}from"./Group-DSt3d3i4.js";import{n as a,t as o}from"./BaseCard-C_VuKVYL.js";import{n as s,t as c}from"./List-BAe9Z2n-.js";import{n as l,t as u}from"./Stack-D_d3SZwt.js";import{t as d}from"./BodyText-Vl4rxmG1.js";import{t as f}from"./Heading-CiSQlEyi.js";import{t as p}from"./FieldDescription-DuhvzLg0.js";import{n as m,t as h}from"./IconTextButton-Dujo5R-j.js";import{f as g,l as _}from"./safetyFile-BP682nbe.js";function v({process:e,onOpenGuide:t,action:n}){let r=e.steps.findIndex(t=>t.id===e.next_step),a=r>=0?e.steps[r]:null,s=e.steps.filter(e=>e.done).length;return a?(0,y.jsx)(o,{"data-testid":`next-step-card`,children:(0,y.jsxs)(u,{gap:`sm`,children:[(0,y.jsxs)(p,{children:[`Step `,r+1,` of `,e.steps.length,`, `,s,` done`]}),(0,y.jsxs)(f,{children:[`The next step is: `,a.title]}),a.reasons.length>0&&(0,y.jsx)(c,{children:a.reasons.map(e=>(0,y.jsx)(c.Item,{children:(0,y.jsx)(d,{children:e})},e))}),(0,y.jsx)(p,{children:`This says where the file is in its process, not that the deployment is safe.`}),(0,y.jsxs)(i,{justify:`flex-end`,children:[n,(0,y.jsx)(h,{icon:`book`,label:`Read the guidance`,variant:`outline`,onClick:()=>t(a.id)})]})]})}):(0,y.jsx)(o,{"data-testid":`next-step-card`,children:(0,y.jsxs)(u,{gap:`sm`,children:[(0,y.jsx)(f,{children:`Every step of the process is complete`}),(0,y.jsx)(d,{children:`This says where the file is in its process. Whether the deployment is acceptably safe is the judgement of the people who signed it.`})]})})}var y;function b(){return(b=e((()=>{r(),s(),l(),a(),m(),t(),y=n(),v.__docgenInfo={description:``,methods:[],displayName:`NextStepCard`,props:{process:{required:!0,tsType:{name:`SafetyProcess`},description:`The process, as the file's API response carries it`},onOpenGuide:{required:!0,tsType:{name:`signature`,type:`function`,raw:`(stepId: string) => void`,signature:{arguments:[{type:{name:`string`},name:`stepId`}],return:{name:`void`}}},description:`Called with a step's id to open its guidance`},action:{required:!1,tsType:{name:`ReactNode`},description:`An action for the next step, such as recording a workshop`}}}})))()}var x,S,C,w,T,E;function D(){return(D=e((()=>{b(),g(),{fn:x}=__STORYBOOK_MODULE_TEST__,S={title:`Safety/Next step card`,component:v,parameters:{layout:`padded`},args:{process:_,onOpenGuide:x()}},C={},w={args:{process:{next_step:null,steps:_.steps.map(e=>({...e,done:!0,reasons:[]}))}}},T={globals:{colorScheme:`dark`}},E=[`PartWayThrough`,`Complete`,`DarkMode`],C.parameters={...C.parameters,docs:{...C.parameters?.docs,source:{originalSource:`{}`,...C.parameters?.docs?.source}}},w.parameters={...w.parameters,docs:{...w.parameters?.docs,source:{originalSource:`{
+  args: {
+    process: {
+      next_step: null,
+      steps: SAMPLE_PROCESS.steps.map(step => ({
+        ...step,
+        done: true,
+        reasons: []
+      }))
+    }
+  }
+}`,...w.parameters?.docs?.source}}},T.parameters={...T.parameters,docs:{...T.parameters?.docs,source:{originalSource:`{
+  globals: {
+    colorScheme: "dark"
+  }
+}`,...T.parameters?.docs?.source}}}})))()}D();export{w as Complete,T as DarkMode,C as PartWayThrough,E as __namedExportsOrder,S as default};

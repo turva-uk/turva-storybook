@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{i as t,n}from"./PageSpinner-BSxFD2IG.js";function r(){return(r=e((()=>{t(),n()})))()}export{r as t};

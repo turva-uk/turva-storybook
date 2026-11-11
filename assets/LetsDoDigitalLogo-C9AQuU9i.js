@@ -1,0 +1,7 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{n,t as r}from"./BaseCard-C_VuKVYL.js";import{n as i,t as a}from"./publicAsset-HJc8QrwY.js";import{n as o,t as s}from"./Image-SdxK9Tny.js";var c,l;function u(){return(u=e((()=>{c=`_mark_1wz0o_7`,l={mark:c}})))()}function d({alt:e=`Let’s Do Digital`,height:t=5}){return(0,f.jsx)(r,{bg:`white`,children:(0,f.jsx)(s,{src:i(p),alt:e,height:t,className:l.mark})})}var f,p;function m(){return(m=e((()=>{n(),o(),a(),u(),f=t(),p=`/email/ldd-logo.png`,d.__docgenInfo={description:`Let's Do Digital Logo
+
+Displays the logo inside a white card, so it reads the same on every
+public background. The mark has no words, so the alt text names it.
+
+@param props - Component props
+@returns Logo image on a white panel`,methods:[],displayName:`LetsDoDigitalLogo`,props:{alt:{required:!1,tsType:{name:`string`},description:`Alt text for accessibility (default: "Let's Do Digital")`,defaultValue:{value:`"Let’s Do Digital"`,computed:!1}},height:{required:!1,tsType:{name:`union`,raw:`number | string`,elements:[{name:`number`},{name:`string`}]},description:`Logo height in rem (default: 5)`,defaultValue:{value:`5`,computed:!1}}}}})))()}export{m as n,d as t};

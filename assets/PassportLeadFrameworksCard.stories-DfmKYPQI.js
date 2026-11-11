@@ -1,0 +1,18 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./react-DlPsW1c0.js";import{t as n}from"./jsx-runtime-MKhVqBIO.js";import{t as r}from"./MultiSelectField-Dn62m3xs.js";import{n as i,r as a}from"./iframe-gh_IKeZo.js";import{Ct as o,n as s}from"./appIcons-BpiHpu4d.js";import{t as c}from"./ActionCard-DZ7xcBoc.js";import{t as l}from"./form-T0M4Wlbx.js";import{t as u}from"./action-card-BJZdQL-2.js";function d({options:e,value:t,onChange:n,disabled:i=!1,error:a}){let s=(0,f.useMemo)(()=>{let n=new Set(e.map(e=>e.id));return[...e.map(e=>({value:e.id,label:`${e.name} (${e.publisher})`})),...t.filter(e=>!n.has(e)).map(e=>({value:e,label:`${e} (no longer offered)`}))]},[e,t]);return(0,p.jsx)(c,{icon:(0,p.jsx)(o,{}),title:`Passport frameworks`,fullWidth:!0,action:(0,p.jsx)(r,{label:`Lead frameworks`,description:`Offered first, in this order, when people here choose the frameworks they work to. The rest follow alphabetically. Saved as you change it.`,placeholder:t.length===0?`None: the list is alphabetical`:void 0,data:s,value:t,onChange:n,searchable:!0,onKeyDown:e=>{e.key===`Enter`&&e.preventDefault()},error:a,disabled:i})})}var f,p;function m(){return(m=e((()=>{f=t(),u(),l(),s(),p=n(),d.__docgenInfo={description:``,methods:[],displayName:`PassportLeadFrameworksCard`,props:{options:{required:!0,tsType:{name:`Array`,elements:[{name:`FrameworkOption`}],raw:`FrameworkOption[]`},description:`Every framework an admin can pick, in the order to list them`},value:{required:!0,tsType:{name:`Array`,elements:[{name:`string`}],raw:`string[]`},description:`The lead framework ids, the first leading`},onChange:{required:!0,tsType:{name:`signature`,type:`function`,raw:`(value: string[]) => void`,signature:{arguments:[{type:{name:`Array`,elements:[{name:`string`}],raw:`string[]`},name:`value`}],return:{name:`void`}}},description:`Called with the new list, in order`},disabled:{required:!1,tsType:{name:`boolean`},description:`True while the saved list is still loading`,defaultValue:{value:`false`,computed:!1}},error:{required:!1,tsType:{name:`string`},description:`Why the list could not be loaded or the last change saved`}}}})))()}var h,g,_,v,y,b,x;function S(){return(S=e((()=>{m(),a(),{fn:h}=__STORYBOOK_MODULE_TEST__,g={title:`Passport/Passport lead frameworks card`,tags:[`!dev`],component:d,parameters:{layout:`padded`},args:{options:i.frameworks,onChange:h()}},_={args:{value:[]}},v={args:{value:[`uk_sact_board_2023`]}},y={args:{value:[`withdrawn_sheet`]}},b={args:{value:[],disabled:!0}},x=[`Default`,`WithLeads`,`LeadNoLongerOffered`,`Loading`],_.parameters={..._.parameters,docs:{..._.parameters?.docs,source:{originalSource:`{
+  args: {
+    value: []
+  }
+}`,..._.parameters?.docs?.source},description:{story:`No leads: the organisation's people see the list alphabetically.`,..._.parameters?.docs?.description}}},v.parameters={...v.parameters,docs:{...v.parameters?.docs,source:{originalSource:`{
+  args: {
+    value: ["uk_sact_board_2023"]
+  }
+}`,...v.parameters?.docs?.source},description:{story:`An oncology department putting the framework its trainees work to first.`,...v.parameters?.docs?.description}}},y.parameters={...y.parameters,docs:{...y.parameters?.docs,source:{originalSource:`{
+  args: {
+    value: ["withdrawn_sheet"]
+  }
+}`,...y.parameters?.docs?.source},description:{story:`A saved lead whose file has since been withdrawn.`,...y.parameters?.docs?.description}}},b.parameters={...b.parameters,docs:{...b.parameters?.docs,source:{originalSource:`{
+  args: {
+    value: [],
+    disabled: true
+  }
+}`,...b.parameters?.docs?.source}}}})))()}S();export{_ as Default,y as LeadNoLongerOffered,b as Loading,v as WithLeads,x as __namedExportsOrder,g as default};

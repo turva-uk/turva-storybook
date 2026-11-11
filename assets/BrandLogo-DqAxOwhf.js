@@ -1,0 +1,11 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./react-DlPsW1c0.js";import{T as n,w as r}from"./Box-BssAA6js.js";import{n as i,t as a}from"./use-computed-color-scheme-BZiwPiBD.js";import{t as o}from"./jsx-runtime-MKhVqBIO.js";import{n as s,t as c}from"./publicAsset-HJc8QrwY.js";import{n as l,t as u}from"./Image-SdxK9Tny.js";function d({alt:e,colour:t=`auto`,height:r=8,className:a,style:o}){let{other:c}=n(),l=i(`light`),d=c.logo,m=s(d??p[t===`auto`?l===`dark`?`white`:`default`:t]),h=d===void 0?`Quill`:c.wordmark?.alt??c.brand??`Logo`;return(0,f.jsx)(u,{src:m,alt:e??h,height:r,className:a,style:o})}var f,p;function m(){return(m=e((()=>{l(),c(),a(),r(),t(),f=o(),p={default:`/quill-logo.png`,"light-grey":`/quill-logo-light-grey.png`,white:`/quill-logo-white.png`},d.__docgenInfo={description:`Brand Logo
+
+Displays Quill Medical logo image. Auto-detects Storybook environment
+and adjusts image path to work correctly in both Storybook and app.
+
+When the theme around it carries another brand's logo, it shows that
+instead, at the same height. \`colour\` is ignored then: Turva's logo
+carries its own yellow tile, so one file reads in light and dark.
+
+@param props - Component props
+@returns Logo image component`,methods:[],displayName:`BrandLogo`,props:{alt:{required:!1,tsType:{name:`string`},description:`Alt text for accessibility (default: "Quill", or the brand's name)`},colour:{required:!1,tsType:{name:`union`,raw:`"auto" | "default" | "light-grey" | "white"`,elements:[{name:`literal`,value:`"auto"`},{name:`literal`,value:`"default"`},{name:`literal`,value:`"light-grey"`},{name:`literal`,value:`"white"`}]},description:`Logo colour variant (default: "auto")`,defaultValue:{value:`"auto"`,computed:!1}},height:{required:!1,tsType:{name:`union`,raw:`number | string`,elements:[{name:`number`},{name:`string`}]},description:`Logo height in rem (default: 8)`,defaultValue:{value:`8`,computed:!1}},className:{required:!1,tsType:{name:`string`},description:`CSS class name`},style:{required:!1,tsType:{name:`ReactCSSProperties`,raw:`React.CSSProperties`},description:`Inline styles`}}}})))()}export{m as n,d as t};

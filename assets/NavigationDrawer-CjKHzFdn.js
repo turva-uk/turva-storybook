@@ -1,0 +1,10 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{i as t,n,r,t as i}from"./FocusTrap-DOxT9K2B.js";import{t as a}from"./jsx-runtime-MKhVqBIO.js";import{n as o,t as s}from"./Paper-DYnmb4UY.js";var c,l;function u(){return(u=e((()=>{c=`_panel_fdqlm_10`,l={panel:c}})))()}function d({opened:e,onClose:t,width:n=`16.25rem`,topOffset:a=0,children:o}){return(0,f.jsxs)(f.Fragment,{children:[e&&(0,f.jsx)(r,{onClick:t,opacity:.4,blur:2,radius:0,style:{position:`absolute`,top:a,left:0,right:0,bottom:0,zIndex:15}}),(0,f.jsx)(i,{active:e,children:(0,f.jsx)(s,{id:`app-navbar`,role:`dialog`,"aria-modal":e?`true`:void 0,"aria-label":`Navigation`,className:l.panel,inert:!e,shadow:`md`,p:`xs`,withBorder:!0,style:{position:`absolute`,top:a,bottom:0,left:0,width:n,zIndex:16,transform:e?`translateX(0)`:`translateX(-100%)`,transition:`transform 150ms ease`,display:`flex`,flexDirection:`column`,overflowY:`auto`},children:o})})]})}var f;function p(){return(p=e((()=>{n(),t(),o(),u(),f=a(),d.__docgenInfo={description:`Navigation Drawer
+
+Renders slide-out navigation drawer for mobile with:
+- Animated slide-in from left
+- Semi-transparent backdrop overlay
+- Focus trap to keep keyboard navigation within drawer
+- Click-outside-to-close functionality
+
+@param props - Component props
+@returns Navigation drawer with overlay`,methods:[],displayName:`NavigationDrawer`,props:{opened:{required:!0,tsType:{name:`boolean`},description:`Whether the drawer is currently open`},onClose:{required:!0,tsType:{name:`signature`,type:`function`,raw:`() => void`,signature:{arguments:[],return:{name:`void`}}},description:`Callback when user closes drawer (clicks overlay or navigates)`},width:{required:!1,tsType:{name:`string`},description:`Width of the drawer panel (default: "16.25rem")`,defaultValue:{value:`"16.25rem"`,computed:!1}},topOffset:{required:!1,tsType:{name:`number`},description:`Offset from top to account for header height (default: 0)`,defaultValue:{value:`0`,computed:!1}},children:{required:!0,tsType:{name:`ReactReactNode`,raw:`React.ReactNode`},description:`Navigation content to render inside drawer`}}}})))()}export{p as n,d as t};

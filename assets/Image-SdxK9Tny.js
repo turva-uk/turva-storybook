@@ -1,0 +1,10 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./react-DlPsW1c0.js";import{t as n}from"./jsx-runtime-MKhVqBIO.js";function r({src:e,alt:t,width:n,height:r,className:a,style:o,loading:s=`eager`,fallback:c}){let l=e||c||``,u=t===``,d={...o,...r!==void 0&&{height:typeof r==`number`?`${r}rem`:r},...n!==void 0&&{width:typeof n==`number`?`${n}rem`:n}};return(0,i.jsx)(`img`,{src:l,alt:t,"aria-hidden":u||void 0,loading:s,className:a,style:d})}var i;function a(){return(a=e((()=>{t(),i=n(),r.__docgenInfo={description:`Image
+
+Renders image with accessibility support:
+- If alt="" → treated as decorative (aria-hidden)
+- If alt has text → proper accessibility labels
+- Supports fallback images
+- Configurable lazy loading
+
+@param props - Component props
+@returns Accessible image element`,methods:[],displayName:`Image`,props:{src:{required:!1,tsType:{name:`string`},description:`Image source URL (imported or path)`},alt:{required:!0,tsType:{name:`string`},description:`Alt text (required for accessibility, use "" for decorative)`},width:{required:!1,tsType:{name:`union`,raw:`number | string`,elements:[{name:`number`},{name:`string`}]},description:`Image width`},height:{required:!1,tsType:{name:`union`,raw:`number | string`,elements:[{name:`number`},{name:`string`}]},description:`Image height`},className:{required:!1,tsType:{name:`string`},description:`CSS class name`},style:{required:!1,tsType:{name:`ReactCSSProperties`,raw:`React.CSSProperties`},description:`Inline styles`},loading:{required:!1,tsType:{name:`union`,raw:`"eager" | "lazy"`,elements:[{name:`literal`,value:`"eager"`},{name:`literal`,value:`"lazy"`}]},description:`Loading strategy (default: "eager")`,defaultValue:{value:`"eager"`,computed:!1}},fallback:{required:!1,tsType:{name:`string`},description:`Fallback image if src fails`}}}})))()}export{a as n,r as t};

@@ -1,0 +1,56 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./react-DlPsW1c0.js";import{m as n,p as r}from"./theme-B7Ll1jCm.js";import{t as i}from"./jsx-runtime-MKhVqBIO.js";import{n as a,t as o}from"./Divider-BkZfNhmn.js";import{n as s,t as ee}from"./Stack-D_d3SZwt.js";import{n as c,r as l}from"./api-9BtBfbLR.js";import{d as te,g as ne,o as u,p as d,s as re}from"./iframe-gh_IKeZo.js";import{i as f,t as p}from"./hooks-Cs7gDo61.js";import{i as ie,n as ae,r as m,t as h}from"./featureNavItems-BvBGrJUu.js";import{n as g,t as _}from"./orgUnit-D_fcGJNm.js";import{n as v,t as oe}from"./NavIcon-Cuud3MpV.js";import{i as y,n as b,r as x,t as se}from"./SendFeedbackNavLink-B9L6MHyn.js";import{n as S,r as ce}from"./navStyles-0jIDbcj_.js";import{n as C,t as le}from"./LogoutNavLink-BoBV_pgM.js";function ue(e){return e?.platform_role===`superadmin`}function w({onNavigate:e,showIcons:t=!1,patientNav:n}){let{logout:i,state:a}=re(),s=ne(),[l,u]=(0,T.useState)(null),[d,p]=(0,T.useState)(null),[m,h]=(0,T.useState)(void 0),[_,v]=(0,T.useState)(null),[y,b]=(0,T.useState)(null),S=ae(),C=S.some(e=>e.href===`/admin`),w=ie(`teaching`),D=f(`manage_teaching`),de=f(`manage_users`),O=a.status===`authenticated`&&(a.user.clinical_services_enabled??!0),k=a.status===`authenticated`&&a.user.platform_role===`superadmin`,fe=a.status===`authenticated`&&ue(a.user),pe=a.status===`loading`,A=s.pathname.match(/^\/admin\/patients\/([^/]+)/),j=A?A[1]:null,M=s.pathname.match(/^\/admin\/(?:patients|users)\/[^/]+\/(edit|deactivate|activate)$/)?.[1]??null,N=M?[{label:{edit:`Edit`,deactivate:`Deactivate`,activate:`Activate`}[M],href:s.pathname}]:void 0,P=s.pathname.match(/^\/admin\/users\/([^/]+)/),F=P?P[1]:null,I=s.pathname.match(/^\/admin\/organisations\/([^/]+)/),L=I?I[1]:null,R=s.pathname.match(/^\/admin\/organisations\/[^/]+\/([^/]+)/)?.[1]??null,z=s.pathname.match(/^\/admin\/sites\/([^/]+)/),B=z?z[1]:null,V=s.pathname.match(/^\/admin\/sites\/[^/]+\/([^/]+)/)?.[1]??null,H=s.pathname.match(/^\/admin\/(?:organisations|sites)\/[^/]+\/members\/(\d+)/)?.[1]??null,U=s.pathname.match(/^\/admin\/teaching\/(centres|modules|all-delegates)/),W=U?U[1]:null,G=s.pathname.match(/^\/admin\/teaching\/modules\/([^/]+)/),K=G?G[1]:null;(0,T.useEffect)(()=>{async function e(){if(!j||j===`new`||j===`list`||j===`edit`||j===`deactivate`)u(null);else try{let e=(await c.get(`/patients/${j}`)).name?.[0],t=`${e?.given?.[0]||``} ${e?.family||``}`.trim();u(t||`Unknown Patient`)}catch(e){console.error(`Failed to fetch patient name:`,e),u(null)}}e()},[j]),(0,T.useEffect)(()=>{async function e(){if(!F||F===`new`||F===`list`||F===`edit`||F===`deactivate`)p(null);else try{let e=await c.get(`/users/${F}`);p(e.username||`Unknown User`)}catch(e){console.error(`Failed to fetch username:`,e),p(null)}}e()},[F]),(0,T.useEffect)(()=>{let e=!1;async function t(){let t={features:`Features`,edit:`Edit`,"add-staff":`Add staff`,"add-patient":`Add patient`,"add-site":`Add site`,retention:`Record retention`},n=L??B;if(!n||!/^\d+$/.test(n))h(void 0);else try{let r=await g.get(Number(n));if(e)return;let i=L?R:V,a=L?`/admin/organisations/${n}`:`/admin/sites/${n}`,o;if(i===`members`&&H){let t=await g.memberPractice(Number(n),Number(H)).catch(()=>null);if(e)return;o=t?{label:t.username,href:`${a}/members/${H}`}:void 0}else i&&t[i]&&(o={label:t[i],href:`${a}/${i}`});let s={label:r.name||`Unknown place`,href:a,children:o?[o]:void 0};h({place:s,parent:r.parent_id!==null&&r.parent_name?{label:r.parent_name,href:r.parent_is_root?`/admin/organisations/${r.parent_id}`:`/admin/sites/${r.parent_id}`}:void 0})}catch(t){console.error(`Failed to fetch place name:`,t),e||h(void 0)}}return t(),()=>{e=!0}},[L,R,B,V,H]),(0,T.useEffect)(()=>{if(!C||k)return;let e=!1;return g.list({roots:!0}).then(t=>{e||v(t.length>0)}).catch(()=>{e||v(!1)}),()=>{e=!0}},[C,k]);let q=k||_!==!1;(0,T.useEffect)(()=>{async function e(){if(!K)b(null);else try{let e=await c.get(`/teaching/admin/banks/${K}`);b(e.title||`Unknown bank`)}catch(e){console.error(`Failed to fetch bank title:`,e),b(null)}}e()},[K]);let J={"/admin/users/new":`New user`,"/admin/users/edit":`Edit user`,"/admin/patients/new":`New patient`,"/admin/patients/list":`All patients`,"/admin/patients/edit":`Edit patient`,"/admin/patients/deactivate":`Deactivate patient`,"/admin/organisations/new":`New organisation`,"/admin/sites/new":`New site`}[s.pathname],Y=J?[{label:J,href:s.pathname}]:void 0,me={label:`Users`,href:`/admin/users`,icon:t?`user`:void 0,children:d?[{label:d,href:`/admin/users/${F}`,children:N}]:s.pathname.startsWith(`/admin/users/`)?Y:void 0},he={label:`Patients`,href:`/admin/patients`,icon:t?`file`:void 0,children:l?[{label:l,href:`/admin/patients/${j}`,children:N}]:s.pathname.startsWith(`/admin/patients/`)?Y:void 0},X=(()=>{if(!m)return;let{parent:e,place:t}=m;return e!==void 0&&(q||e.href?.startsWith(`/admin/sites/`))?[{...e,children:[t]}]:[t]})(),Z=(()=>{if(B&&/^\d+$/.test(B)){let e=`/admin/sites/${B}`,t=n=>n.some(n=>n.href===e||n.children&&t(n.children));return X&&t(X)?X:X?[...X,{label:`…`,href:e}]:[{label:`…`,href:e}]}return X})(),ge={label:`Admin`,href:`/admin`,icon:t?`adjustments`:void 0,keepsDrawerOpen:!0,children:[me,...O&&de?[he]:[],...q?[{label:`Organisations`,href:`/admin/organisations`,icon:t?`building-community`:void 0,children:L===`new`?Y:Z}]:[],{label:`Sites`,href:`/admin/sites`,icon:t?`building-hospital`:void 0,...B===`new`?{children:Y}:q?{exact:B!==null&&/^\d+$/.test(B)}:{children:Z}},...k?[{label:`Feedback`,href:`/admin/feedback`,icon:t?`feedback`:void 0,children:/^\/admin\/feedback\/[^/]+$/.test(s.pathname)?[{label:`Submission`,href:s.pathname}]:void 0},{label:`Record retention`,href:`/admin/retention`,icon:t?`database`:void 0},{label:`Passport`,href:`/admin/passport`,icon:t?`passport`:void 0}]:[],...fe?[{label:`Newsletter`,href:`/admin/newsletter`,icon:t?`mail`:void 0}]:[],...w?[{label:`Teaching`,href:`/admin/teaching`,icon:t?`teaching`:void 0,children:W===`centres`?[{label:`Centres`,href:`/admin/teaching/centres`}]:W===`modules`?[{label:`Modules`,href:`/admin/teaching/modules`,children:y?[{label:y.length>8?`${y.slice(0,8)}…`:y,href:`/admin/teaching/modules/${K}`,children:/^\/admin\/teaching\/modules\/[^/]+\/org\/[^/]+$/.test(s.pathname)?[{label:`Organisation`,href:s.pathname}]:void 0}]:void 0}]:W===`all-delegates`?[{label:`All delegates`,href:`/admin/teaching/all-delegates`}]:void 0}]:[]]},Q=n?.[0]?.href===`/messages`,_e=Q?(n??[]).slice(1).reduceRight((e,t)=>[{...t,...e.length>0?{children:e}:{}}],[]):[],$=null;if(n&&n.length>0&&!Q){let e={...n[n.length-1]};for(let t=n.length-2;t>=0;t--)e={...n[t],children:[e]};t&&!e.icon&&(e={...e,icon:`user`}),$=e}return pe?null:(0,E.jsxs)(ee,{gap:0,children:[$&&(0,E.jsxs)(E.Fragment,{children:[(0,E.jsx)(x,{item:$,onNavigate:e,showIcons:t}),(0,E.jsx)(o,{my:`xs`})]}),O&&(0,E.jsx)(r,{component:te,to:`/`,label:`Home`,styles:ce,active:s.pathname===`/`,onClick:()=>{e&&e()},leftSection:t?(0,E.jsx)(oe,{name:`home`}):void 0}),O&&(0,E.jsx)(x,{item:{label:`Messages`,href:`/messages`,icon:t?`message`:void 0,children:_e.length>0?_e:void 0},onNavigate:e,showIcons:t}),S.map(n=>(0,E.jsx)(x,{item:n.href===`/admin`?ge:n.href===`/teaching`&&D?{...n,children:[{label:`Assessments`,href:`/teaching`},{label:`Manage items`,href:`/teaching/manage`}]}:n,onNavigate:e,showIcons:t},n.label)),(0,E.jsx)(se,{showIcons:t,onNavigate:e}),(0,E.jsx)(le,{onLogout:i,showIcons:t,onNavigate:e})]})}var T,E;function D(){return(D=e((()=>{n(),s(),a(),d(),T=t(),u(),m(),p(),l(),_(),v(),b(),C(),y(),h(),S(),E=i(),w.__docgenInfo={description:`Side Navigation Content
+
+Renders navigation link items with optional icons. Handles navigation
+via React Router and logout functionality via AuthContext.
+Patient navigation is driven explicitly by the patientNav prop.
+
+@param props - Component props
+@returns Navigation links stack`,methods:[],displayName:`SideNavContent`,props:{onNavigate:{required:!1,tsType:{name:`signature`,type:`function`,raw:`() => void`,signature:{arguments:[],return:{name:`void`}}},description:`Called after navigation (to close drawer on mobile)`},showIcons:{required:!1,tsType:{name:`boolean`},description:`Whether to display icons next to labels`,defaultValue:{value:`false`,computed:!1}},patientNav:{required:!1,tsType:{name:`Array`,elements:[{name:`signature`,type:`object`,raw:`{
+  /** Display label */
+  label: string;
+  /** Route path (optional for parent-only group headers) */
+  href?: string;
+  /** Optional icon name (uses NavIcon) */
+  icon?: IconName;
+  /** Optional child navigation items */
+  children?: NavItem[];
+  /**
+   * Leave the mobile drawer open when this item is pressed. For a
+   * heading such as Admin, whose page is mostly a way to its children:
+   * pressing it reveals them, and closing the drawer at that moment
+   * hides them again, so reaching one took a second trip to the
+   * hamburger.
+   */
+  keepsDrawerOpen?: boolean;
+  /**
+   * Highlight on this item's own address only. An item with no children
+   * otherwise stays highlighted on every page beneath it, which is right
+   * when nothing else in the menu names that page and wrong when
+   * something does: two entries then claim to be where you are.
+   */
+  exact?: boolean;
+}`,signature:{properties:[{key:`label`,value:{name:`string`,required:!0},description:`Display label`},{key:`href`,value:{name:`string`,required:!1},description:`Route path (optional for parent-only group headers)`},{key:`icon`,value:{name:`union`,raw:`| "home"
+| "settings"
+| "logout"
+| "user"
+| "bell"
+| "message"
+| "file"
+| "adjustments"
+| "building-community"
+| "building-hospital"
+| "teaching"
+| "passport"
+| "book"
+| "pricing"
+| "database"
+| "mail"
+| "feedback"
+| "safety"`,elements:[{name:`literal`,value:`"home"`},{name:`literal`,value:`"settings"`},{name:`literal`,value:`"logout"`},{name:`literal`,value:`"user"`},{name:`literal`,value:`"bell"`},{name:`literal`,value:`"message"`},{name:`literal`,value:`"file"`},{name:`literal`,value:`"adjustments"`},{name:`literal`,value:`"building-community"`},{name:`literal`,value:`"building-hospital"`},{name:`literal`,value:`"teaching"`},{name:`literal`,value:`"passport"`},{name:`literal`,value:`"book"`},{name:`literal`,value:`"pricing"`},{name:`literal`,value:`"database"`},{name:`literal`,value:`"mail"`},{name:`literal`,value:`"feedback"`},{name:`literal`,value:`"safety"`}],required:!1},description:`Optional icon name (uses NavIcon)`},{key:`children`,value:{name:`Array`,elements:[{name:`NavItem`}],raw:`NavItem[]`,required:!1},description:`Optional child navigation items`},{key:`keepsDrawerOpen`,value:{name:`boolean`,required:!1},description:`Leave the mobile drawer open when this item is pressed. For a
+heading such as Admin, whose page is mostly a way to its children:
+pressing it reveals them, and closing the drawer at that moment
+hides them again, so reaching one took a second trip to the
+hamburger.`},{key:`exact`,value:{name:`boolean`,required:!1},description:`Highlight on this item's own address only. An item with no children
+otherwise stays highlighted on every page beneath it, which is right
+when nothing else in the menu names that page and wrong when
+something does: two entries then claim to be where you are.`}]}}],raw:`NavItem[]`},description:`Patient navigation breadcrumbs - flat array converted to nested tree`}}}})))()}export{D as n,w as t};

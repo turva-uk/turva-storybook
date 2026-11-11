@@ -1,0 +1,23 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./SimpleGrid-Cw3N2DUw.js";import{t as r}from"./jsx-runtime-MKhVqBIO.js";import{n as i,t as a}from"./Icon-DG7U5iIm.js";import{$ as o,n as s}from"./appIcons-BpiHpu4d.js";import{n as c,t as l}from"./publicIconStroke-Dytt-0k3.js";var u,d,f,p,m,h;function g(){return(g=e((()=>{u=`_card_bvf3l_1`,d=`_clickable_bvf3l_23`,f=`_icon_bvf3l_45`,p=`_title_bvf3l_50`,m=`_body_bvf3l_58`,h={card:u,clickable:d,icon:f,title:p,body:m}})))()}function _({icon:e,title:t,body:n,href:r}){let i=(0,v.jsxs)(v.Fragment,{children:[(0,v.jsx)(`div`,{className:h.icon,children:(0,v.jsx)(a,{icon:(0,v.jsx)(e,{stroke:l}),size:`xl`})}),(0,v.jsx)(`div`,{className:h.title,children:t}),(0,v.jsx)(`div`,{className:h.body,children:n})]});return r?(0,v.jsx)(`a`,{"data-testid":`feature-card`,className:`${h.card} ${h.clickable}`,href:r,children:i}):(0,v.jsx)(`div`,{"data-testid":`feature-card`,className:h.card,children:i})}var v;function y(){return(y=e((()=>{i(),c(),g(),v=r(),_.__docgenInfo={description:``,methods:[],displayName:`PublicFeatureCard`,props:{icon:{required:!0,tsType:{name:`ComponentType`,elements:[{name:`signature`,type:`object`,raw:`{ stroke?: number }`,signature:{properties:[{key:`stroke`,value:{name:`number`,required:!1}}]}}],raw:`ComponentType<{ stroke?: number }>`},description:`Tabler icon component displayed at the top`},title:{required:!0,tsType:{name:`string`},description:`Card title`},body:{required:!0,tsType:{name:`string`},description:`Card body text`},href:{required:!1,tsType:{name:`string`},description:`Optional URL - makes card a clickable link with hover animation`}}}})))()}function b({children:e}){return(0,x.jsx)(n,{cols:{base:1,sm:2,md:3},spacing:11,children:e})}var x;function S(){return(S=e((()=>{t(),x=r(),b.__docgenInfo={description:``,methods:[],displayName:`PublicFeatureCardGrid`,props:{children:{required:!0,tsType:{name:`ReactNode`},description:``}}}})))()}var C,w,T,E,D,O,k;function A(){return(A=e((()=>{y(),S(),s(),C=r(),w={title:`Public/Feature card/Public feature card`,component:_,parameters:{layout:`fullscreen`},decorators:[e=>(0,C.jsx)(`div`,{style:{background:`var(--brand-primary)`,minHeight:`100vh`,padding:`var(--mantine-spacing-xl)`},children:(0,C.jsx)(e,{})})]},T={args:{icon:o,title:`Structured Clinical Records`,body:`OpenEHR archetypes ensure clinical data is semantically rich, queryable, and portable.`}},E={args:{icon:o,title:`Structured Clinical Records`,body:`OpenEHR archetypes ensure clinical data is semantically rich, queryable, and portable.`,href:`/features`}},D=[{title:`Structured Clinical Records`,body:`OpenEHR archetypes ensure clinical data is semantically rich, queryable, and portable.`},{title:`Competency-Based Access`,body:`CBAC models real NHS clinical hierarchies with fine-grained, auditable permissions.`},{title:`Named Patient Boards`,body:`Organise patients into care boards by ward, specialty, or care team.`},{title:`Clinical Messaging`,body:`FHIR Communication resources underpin a secure, threaded messaging layer.`},{title:`Letters & Documentation`,body:`Generate structured outpatient letters and discharge summaries pre-populated from the record.`},{title:`Modular Deployment`,body:`Activate only the modules your organisation needs - grow the system alongside your workflows.`}],O={args:{icon:o,title:``,body:``},render:()=>(0,C.jsx)(b,{children:D.map(e=>(0,C.jsx)(_,{icon:o,title:e.title,body:e.body,href:`/features`},e.title))})},k=[`Default`,`Clickable`,`Grid`],T.parameters={...T.parameters,docs:{...T.parameters?.docs,source:{originalSource:`{
+  args: {
+    icon: IconMessage,
+    title: "Structured Clinical Records",
+    body: "OpenEHR archetypes ensure clinical data is semantically rich, queryable, and portable."
+  }
+}`,...T.parameters?.docs?.source}}},E.parameters={...E.parameters,docs:{...E.parameters?.docs,source:{originalSource:`{
+  args: {
+    icon: IconMessage,
+    title: "Structured Clinical Records",
+    body: "OpenEHR archetypes ensure clinical data is semantically rich, queryable, and portable.",
+    href: "/features"
+  }
+}`,...E.parameters?.docs?.source}}},O.parameters={...O.parameters,docs:{...O.parameters?.docs,source:{originalSource:`{
+  args: {
+    icon: IconMessage,
+    title: "",
+    body: ""
+  },
+  render: () => <PublicFeatureCardGrid>
+      {features.map(f => <PublicFeatureCard key={f.title} icon={IconMessage} title={f.title} body={f.body} href="/features" />)}
+    </PublicFeatureCardGrid>
+}`,...O.parameters?.docs?.source}}}})))()}A();export{E as Clickable,T as Default,O as Grid,k as __namedExportsOrder,w as default};

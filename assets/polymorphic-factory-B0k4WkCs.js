@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{a as t,o as n}from"./Box-BssAA6js.js";import{t as r}from"./jsx-runtime-MKhVqBIO.js";function i(e){let n=e;return n.withProps=e=>{let t=t=>(0,a.jsx)(n,{...e,...t});return t.extend=n.extend,t.displayName=`WithProps(${n.displayName})`,t},n.extend=t,n}var a;function o(){return(o=e((()=>{n(),a=r()})))()}export{i as n,o as t};

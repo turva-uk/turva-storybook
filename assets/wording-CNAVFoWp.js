@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";var t,n;function r(){return(r=e((()=>{t=`I would rather not get news and updates`,n=`We'll email you news and updates about Quill Medical from time to time. Tick this box if you would rather not get them.`})))()}export{t as n,r,n as t};

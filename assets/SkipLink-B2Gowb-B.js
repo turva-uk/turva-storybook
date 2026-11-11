@@ -1,0 +1,6 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./Box-BssAA6js.js";import{t as r}from"./jsx-runtime-MKhVqBIO.js";import{n as i,t as a}from"./Anchor-wlk_Knrv.js";var o,s,c;function l(){return(l=e((()=>{o=`_link_1pves_5`,s=`_target_1pves_27`,c={link:o,target:s}})))()}function u(e){let t=document.getElementById(m);t&&(e.preventDefault(),t.focus())}function d(){return(0,p.jsx)(a,{href:`#${m}`,className:c.link,onClick:u,children:`Skip to main content`})}function f({children:e}){return(0,p.jsx)(n,{id:m,tabIndex:-1,className:c.target,children:e})}var p,m;function h(){return(h=e((()=>{i(),t(),l(),p=r(),m=`main-content`,d.__docgenInfo={description:`"Skip to main content", visible only when focused.
+
+@returns The skip link`,methods:[],displayName:`SkipLink`},f.__docgenInfo={description:`Wraps a layout's content as the skip link's destination. Focusable by
+script only (tabIndex -1), so it adds no tab stop of its own.
+
+@returns The focusable wrapper`,methods:[],displayName:`SkipLinkTarget`,props:{children:{required:!0,tsType:{name:`ReactNode`},description:`The page content the skip link lands on`}}}})))()}export{f as n,h as r,d as t};

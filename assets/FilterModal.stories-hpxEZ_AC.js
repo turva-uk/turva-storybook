@@ -1,0 +1,10 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./react-DlPsW1c0.js";import{t as n}from"./jsx-runtime-MKhVqBIO.js";import{n as r,t as i}from"./FilterModal-CD0QUrO2.js";function a({preselected:e=[]}){let[t,n]=(0,o.useState)(e);return(0,s.jsx)(i,{data:l,value:t,onChange:n,label:`Filter delegates`,placeholder:`Select items…`})}var o,s,c,l,u,d,f,p;function m(){return(m=e((()=>{o=t(),r(),s=n(),c={title:`Tables/Filter modal`,component:i,parameters:{layout:`padded`}},l=[{group:`Trust`,items:[{value:`trust:leeds`,label:`Leeds Teaching Hospitals`},{value:`trust:bradford`,label:`Bradford Teaching Hospitals`},{value:`trust:airedale`,label:`Airedale NHS Foundation Trust`}]},{group:`Clinical lead`,items:[{value:`lead:morton`,label:`Prof James Morton`},{value:`lead:singh`,label:`Dr Rachel Singh`}]},{group:`Other`,items:[{value:`first-pass-only`,label:`1st time passers only`}]}],u={render:()=>(0,s.jsx)(a,{})},d={render:()=>(0,s.jsx)(a,{preselected:[`trust:leeds`,`lead:morton`]})},f={render:()=>(0,s.jsx)(a,{preselected:[`trust:bradford`]}),globals:{colorScheme:`dark`}},p=[`Default`,`WithActiveFilters`,`DarkMode`],u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`{
+  render: () => <InteractiveModal />
+}`,...u.parameters?.docs?.source}}},d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
+  render: () => <InteractiveModal preselected={["trust:leeds", "lead:morton"]} />
+}`,...d.parameters?.docs?.source}}},f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`{
+  render: () => <InteractiveModal preselected={["trust:bradford"]} />,
+  globals: {
+    colorScheme: "dark"
+  }
+}`,...f.parameters?.docs?.source}}}})))()}m();export{f as DarkMode,u as Default,d as WithActiveFilters,p as __namedExportsOrder,c as default};

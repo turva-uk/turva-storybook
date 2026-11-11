@@ -1,0 +1,5 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{n,t as r}from"./Group-DSt3d3i4.js";import{n as i,t as a}from"./LetterStatusBadge-gfGO-W6_.js";var o,s,c,l,u;function d(){return(d=e((()=>{n(),i(),o=t(),s={title:`Badge/Letter status badge`,component:a,parameters:{layout:`padded`},argTypes:{status:{control:`select`,options:[`final`,`draft`,`amended`],description:`Letter status`}}},c=[`final`,`draft`,`amended`],l={render:()=>(0,o.jsx)(r,{gap:`md`,children:c.map(e=>(0,o.jsx)(a,{status:e},e))})},u=[`Default`],l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+  render: () => <Group gap="md">
+      {allStatuses.map(status => <LetterStatusBadge key={status} status={status} />)}
+    </Group>
+}`,...l.parameters?.docs?.source},description:{story:`Shows all statuses.`,...l.parameters?.docs?.description}}}})))()}d();export{l as Default,u as __namedExportsOrder,s as default};

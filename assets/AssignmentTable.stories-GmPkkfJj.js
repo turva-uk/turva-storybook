@@ -1,0 +1,9 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{t}from"./jsx-runtime-MKhVqBIO.js";import{n}from"./DataTable-CrqFwTVv.js";import{n as r,t as i}from"./DataTableControlled-DHBUj558.js";import{f as a,t as o}from"./safetyFile-BP682nbe.js";function s(e){return new Date(e).toLocaleDateString(`en-GB`,{day:`numeric`,month:`long`,year:`numeric`})}function c({assignments:e}){return(0,l.jsx)(i,{searchFields:e=>[e.mitigation_id,e.mitigation_title,e.assignee_name],data:e,columns:u,getRowKey:e=>e.id,emptyMessage:`No mitigation is out with anybody.`})}var l,u;function d(){return(d=e((()=>{n(),r(),l=t(),u=[{header:`Mitigation`,render:e=>`${e.mitigation_id}: ${e.mitigation_title}`},{header:`With`,render:e=>e.assignee_name},{header:`Asked by`,render:e=>e.assigned_by_name},{header:`Since`,render:e=>s(e.assigned_at)}],c.__docgenInfo={description:``,methods:[],displayName:`AssignmentTable`,props:{assignments:{required:!0,tsType:{name:`Array`,elements:[{name:`Assignment`}],raw:`Assignment[]`},description:``}}}})))()}var f,p,m,h,g;function _(){return(_=e((()=>{d(),a(),f={title:`Safety/Assignment table`,component:c,parameters:{layout:`padded`},args:{assignments:o}},p={},m={args:{assignments:[]}},h={globals:{colorScheme:`dark`}},g=[`Default`,`NothingOut`,`DarkMode`],p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`{}`,...p.parameters?.docs?.source}}},m.parameters={...m.parameters,docs:{...m.parameters?.docs,source:{originalSource:`{
+  args: {
+    assignments: []
+  }
+}`,...m.parameters?.docs?.source}}},h.parameters={...h.parameters,docs:{...h.parameters?.docs,source:{originalSource:`{
+  globals: {
+    colorScheme: "dark"
+  }
+}`,...h.parameters?.docs?.source}}}})))()}_();export{h as DarkMode,p as Default,m as NothingOut,g as __namedExportsOrder,f as default};
